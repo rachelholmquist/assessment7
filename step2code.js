@@ -15,8 +15,9 @@ function equalToZero (arr){
 
 myArray = [2, 3, 4, 5, 6, 7, -5]
 
-
 equalToZero(myArray);
+
+//the runtime for #1 would be O(n2) (O of N squared)
 
 // 2. Unique Characters
 
@@ -37,6 +38,8 @@ let myString = 'rachel'
 
 hasUniqueChar(myString);
 
+//the runtime for #2 would be O(n2) (O of N squared)
+
 //3.pangram
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'.split("");
@@ -48,10 +51,13 @@ const isPangram = (string) => {
 
 console.log("true", isPangram('The quick brown fox jumps over the lazy dog!'));
 
+//the runtime for #3 is O(n)
+
 // 4. longest word
-let longestStr = 0;
+
 
 function findLongestWord(arr){
+    let longestStr = 0;
     for(let i = 0; i < arr.length; i++){
         if(longestStr < arr[i].length){
             longestStr = arr[i].length;
@@ -63,3 +69,5 @@ function findLongestWord(arr){
 myArray = ["hello", "hi", "goodbye"];
 
 console.log(findLongestWord(myArray));
+
+//#4 runtime is O(n)
